@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>About</header>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    <div class="wrapper">
+        <article><span class="box"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eius ullam aliquid nostrum similique exercitationem! Provident dolor, reiciendis ex temporibus voluptatem sapiente facere error quidem obcaecati omnis molestias expedita porro. <img class="resize" src="carrell.jpg"> </article>
+        <article><span class="box"></span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, porro modi! Laboriosam, accusamus! Eveniet sequi natus dolor aliquam reprehenderit earum iure ullam eos nostrum, dolores ducimus eaque soluta cumque repellendus. <img class="resize" src="dog.jpg"> </article>
+        <article><span class="box"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur tempora illo, ea provident cum inventore rerum distinctio neque commodi doloremque, vel explicabo, libero molestiae numquam reiciendis voluptas eius dignissimos quibusdam. <img class="resize" src="shrek.jpg"> </article>
+        <article><span class="box"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi architecto, laborum similique rem, dolores porro, accusamus dicta totam ipsa dolor minima ipsam hic! Vel mollitia rerum, ducimus quaerat aliquid nam. <img class="resize" src="steve.jpg"> </article>
+    </div>
+    <footer><a href="learnmore.html">Learn More</a></footer>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        header {
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            background-color: #268fdb;
+        }
+        nav {
+            text-align: center;
+            background-color: #1d6ea8;
+        }
+        .wrapper {
+            width: 100%;
+            height: 1280px;
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: #2b485c;
+        }
+        .resize {
+            width: 150px;
+            height: auto;
+        }
+        article {
+            width: 300px;
+            height: 300px;
+            border: 5px solid black;
+            margin: 10px;
+            position: relative;
+            left: 650px;
+            top: 400px;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            font-size: large;
+            background-color: #6ab0e1;
+        }
+        @media screen and (max-width: 800px) {
+            .wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            article {
+                width: 100%;
+                height: 200px;
+                top: 20px;
+                left: 0px;
+                margin: 5px;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            .wrapper {
+                width: 100%;
+                height: 1280px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            article {
+                width: 250px;
+                margin: 8px;
+                height: 300px;
+                left: 0px;
+            }
+        }
+    </style>
+</body>
+</html>

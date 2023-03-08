@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+</head>
+<body>
+    <header>Welcome to this cool website</header>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+    <div class="wrapper">
+        <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore eveniet maiores temporibus? Porro sit accusamus quod quos cumque at alias. Voluptates, excepturi? Labore, laborum unde illum exercitationem voluptatem aspernatur natus!</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi animi mollitia, aperiam praesentium vero aut quam natus sed, nisi officia non tempore minus totam ipsa quae ullam dignissimos! Voluptates, illum?</article>
+    </div>
+    <footer><a href="learnmore.html">Learn More</a></footer>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        header {
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            background-color: #268fdb;
+        }
+        nav {
+            text-align: center;
+            background-color: #1d6ea8;
+        }
+        .wrapper {
+            width: 100%;
+            height: 1280px;
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: #2b485c;
+        }
+        article {
+            width: 300px;
+            height: 300px;
+            border: 5px solid black;
+            margin: 10px;
+            position: relative;
+            left: 950px;
+            top: 400px;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            font-size: large;
+            background-color: #6ab0e1;
+        }
+        @media screen and (max-width: 800px) {
+            .wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            article {
+                width: 100%;
+                height: 200px;
+                top: 20px;
+                left: 0px;
+                margin: 5px;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            .wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            article {
+                width: 250px;
+                margin: 8px;
+                height: 300px;
+            }
+        }
+    </style>
+</body>
+</html>
